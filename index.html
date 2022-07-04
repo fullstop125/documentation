@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Documentation</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    
+<nav id="navbar">
+     <h1>C++ Documentation</h1>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li>
+          <a class="nav-link" href="#What_you_should_already_know"
+            >What you should already know</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#C++_Object_oriented_programming"
+            >C++ Object oriented programming</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+        <li><a class="nav-link" href="#Variables">Variables</a></li>
+        <li>
+          <a class="nav-link" href="#Declaring_variables"
+            >Declaring variables</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
+        <li>
+          <a class="nav-link" href="#Global_variables">Global variables</a>
+        </li>
+        <li><a class="nav-link" href="#Constants">Constants</a></li>
+        <li><a class="nav-link" href="#Data_types">Data types</a></li>
+        <li>
+          <a class="nav-link" href="#if...else_statement"
+            >if...else statement</a
+          >
+        </li>
+        <li><a class="nav-link" href="#while_statement">while statement</a></li>
+        <li>
+          <a class="nav-link" href="#Function_declarations"
+            >Function declarations</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+<main id="main-doc">
+   <section class="main-section" id="Introduction">
+  <header>Introduction</header>
+  <p>
+            Technical documentation is any document that explains the features of the respective product. In this project, we are going to create a technical documentation of C++ using HTML and CSS. The webpage has a menu sections that helps to 
+            navigate to different sections of the webpage.
+          </p>
+          </section>
+          <section class="main-section" id="What_you_should_already_know">
+                  <header>What you should already know</header>
+                  <p>
+                    Object-oriented programming – As the name
+                    suggests uses objects in programming.
+                    Object-oriented programming aims to
+                    implement real-world entities like
+                    inheritance, hiding, polymorphism,
+                    etc in programming. The main
+                    aim of OOP is to bind together the data
+                    and the functions that operate on them
+                    so that no other part of the code can
+                    access this data except that function.
+                    </section>
+                </p>
+                <section class="main-section" id="C++_Object_oriented_programming">
+                <header>C++ Object oriented programming</header>
+                <p>The building block of C++ that
+                    leads to Object-Oriented programming is a Class.
+                    It is a user-defined data type, which holds its
+                    own data members and member functions, which can
+                    be accessed & used by creating an instance
+                    of that class. A class is like a blueprint for
+                    an object. For Example: Consider the Class
+                    of Cars. There may be many cars with different
+                    names and brand but all of them will share
+                    some common properties like all of them will
+                    have 4 wheels, Speed Limit, Mileage range etc.
+                    So here, Car is the class and wheels,
+                    speed limits, mileage are their properties.</p>
+                    </section>
+                    <section class="main-section" id="Hello_world">
+
+                    <header>Hello world</header>
+                    <article>
+          To get started with writing C++, open the Scratchpad and write
+          your first "Hello world" C++ code:
+          <code
+            #include <iostream>
+              int main() {
+    std::cout << "Hello World!";
+    return 0;
+}
+          </code>
+        </article>
+        </section>
+        <section class="main-section" id="Variables">
+        <header>Variables</header>
+         <p>
+          Variables are containers for storing data values.
+
+In C++, there are different types of variables (defined with different keywords),
+
+        </p>
+        </section>
+        <section class="main-section" id="Declaring_variables">
+        <header>Declaring variables</header>
+        <p>To create a variable, specify the type and assign it a value:</p>
+        <code>type variableName = value;</code>
+        <p>Where type is one of C++ types (such as int), and variableName is the name of the variable (such as x or myName). 
+          The equal sign is used to assign values to the variable.</p>
+          </section>
+          <section class="main-section" id="Variable_scope">
+           <header>Variable scope</header>
+           <p>The scope of a variable is the area of the program where the variable is valid. A global variable is valid from the point it is declared to the end of the program. A local variable's scope is limited to the block where it is declared and 
+             cannot be accessed (set or read) outside that block.</p>
+             </section>
+             <section class="main-section" id="Global_variables">
+            <header>Global variables</header>
+           <p>When you declare a variable outside of any function, it is called a
+            global variable, because it is available to any other code in the
+            current document. When you declare a variable within a function, it
+            is called a local variable, because it is available only within that
+            function.</p>
+            </section>
+            <section class="main-section" id="Constants">
+             <header>Constants</header>
+             <p>Constant identifiers have the same syntax as variable identifiers: they must begin with a letter, underscore, or dollar sign,
+                and they can contain alphabetic, numeric, or underscore characters.</p>
+                <code>const PI = 3.14;</code>
+                <p>While the script is executing, a constant's value cannot be changed by assignment or
+                   re-declared. It must be given a value to begin with.</p>
+                   <p>
+            The scope rules for constants are the same as those for let block
+            scope variables. If the const keyword is omitted, the identifier is
+            assumed to represent a variable.
+          </p>
+          <p>
+            You cannot declare a constant with the same name as a function or
+            variable in the same scope.
+          </p>
+          <section class="main-section" id="Data_types">
+              <header>Data types</header>
+              <p>There are  seven data types:</p>
+          <ul>
+            <li>
+              <p>Six data types that are primitives:</p>
+              <ul>
+                <li>Boolean. true and false.</li>
+                <li>
+                  null. A special keyword denoting a null value. Because
+                  JavaScript is case-sensitive, null is not the same as Null,
+                  NULL, or any other variant.
+                </li>
+                <li>
+                  undefined. A top-level property whose value is undefined.
+                </li>
+                <li>Number. 42 or 3.14159.</li>
+                <li>String. "Howdy"</li>
+                <li>
+                  Symbol (new in ECMAScript 2015). A data type whose instances
+                  are unique and immutable.
+                </li>
+              </ul>
+            </li>
+
+            <li>and Object</li>
+          </ul>
+          Although these data types are a relatively small amount, they enable
+          you to perform useful functions with your applications. Objects and
+          functions are the other fundamental elements in the language. You can
+          think of objects as named containers for values, and functions as
+          procedures that your application can perform.
+        </article>
+      </section>
+          </section>
+             </section>
+     <section class="main-section" id="if...else_statement">
+        <header>if...else statement</header>
+        <p>Use the if statement to specify a block of C++ code to be executed if a condition is true</p>\
+        <code>if (condition) {
+  // block of code to be executed if the condition is true
+}</code>
+<p>Note that if is in lowercase letters. Uppercase letters (If or IF) will generate an error.</p>
+<p>In the example below, we test two values to find out if 20 is greater than 18. If the condition is true, print some text:</p>
+<code>if (20 > 18) {
+  cout << "20 is greater than 18";
+}</code>
+</section>
+<section class="main-section" id="while_statement">
+        <header>while statement</header>
+        <article>
+          A while statement executes its statements as long as a specified
+          condition evaluates to true. A while statement looks as follows:
+          <code>while (condition) statement</code> If the condition becomes
+          false, statement within the loop stops executing and control passes to
+          the statement following the loop.
+          <code>while (condition) {
+    // body of the loop
+}</code>
+</article>
+      </section>
+      <section class="main-section" id="Function_declarations">
+        <header>Function declarations</header>
+        <article>
+          A function definition (also called a function declaration, or function
+          statement) consists of the function keyword, followed by:
+
+          <ul>
+            <li>The name of the function.</li>
+            <li>
+              A list of arguments to the function, enclosed in parentheses and
+              separated by commas.
+            </li>
+            <li>
+              The JavaScript statements that define the function, enclosed in
+              curly brackets, { }.
+            </li>
+          </ul>
+          </article>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+           <ul>
+            <li>
+              All the documentation in this page is taken from
+              <a href="https://docs.microsoft.com/en-us/cpp/?view=msvc-170"target="_blank">MDN</a
+              
+            </li>
+          </ul>
+        </article>
+      </section>
+</main>
+  </body>
+</html>
